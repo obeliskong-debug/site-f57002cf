@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avocat Popescu Dragos - Apărare penală de încredere cu peste 20 de ani de experiență. Reprezentare juridică expertă în dreptul penal pentru protejarea drepturilor dumneavoastră.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Popescu Dragos - Avocat de Drept Penal | Apărare Penală Profesională</title>
+    <style>
+        :root {
+            --color-primary: #1e3a8a;
+            --color-primary-light: #3b82f6;
+            --color-primary-lighter: #eff6ff;
+            --color-accent: #ea580c;
+            --color-accent-light: #fed7aa;
+            --color-text: #1f2937;
+            --color-text-light: #6b7280;
+            --color-white: #ffffff;
+            --color-gray-50: #f9fafb;
+            --color-gray-100: #f3f4f6;
+            --color-gray-200: #e5e7eb;
+            --color-gray-300: #d1d5db;
+            --color-gray-500: #9ca3af;
+            --color-success: #10b981;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --spacing-3xl: 6rem;
+            --spacing-4xl: 8rem;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --duration-fast: 150ms;
+            --duration-base: 300ms;
+            --duration-slow: 500ms;
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            color: var(--color-text);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            letter-spacing: 0.25px;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color var(--duration-base) ease;
+        }
+
+        a:hover {
+            color: var(--color-primary-light);
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            transition: all var(--duration-base) ease;
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--color-white);
+            box-shadow: var(--shadow-sm);
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-md) var(--spacing-lg);
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .logo::before {
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            border-radius: var(--radius-md);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: var(--spacing-xl);
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--color-text);
+            font-weight: 500;
+            position: relative;
+            padding: var(--spacing-xs) 0;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent);
+            transition: width var(--duration-base) ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            font-size: 1.5rem;
+            color: var(--color-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 60px;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(239, 246, 255, 0.95) 100%),
+                        url('https://source.unsplash.com/1200x800/?modern%2Claw%2Coffice');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            text-align: center;
+            z-index: 2;
+            padding: var(--spacing-lg);
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all var(--duration-base) ease;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-light);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        .btn-secondary:hover {
+            background: #d25a0b;
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        /* Section Styles */
+        section {
+            padding: var(--spacing-4xl) var(--spacing-lg);
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+            font-weight: 700;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--color-text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        #about {
+            background: var(--color-gray-50);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+            font-weight: 700;
+        }
+
+        .about-text p {
+            font-size: 1.0625rem;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .feature-card {
+            background: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: all var(--duration-base) ease;
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-card h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.125rem;
+        }
+
+        .feature-card p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+        }
+
+        .about-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Services Section */
+        #services {
+            background: var(--color-white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .service-card {
+            background: var(--color-gray-50);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            border-top: 4px solid var(--color-primary);
+            transition: all var(--duration-base) ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            background: var(--color-white);
+        }
+
+        .service-card h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.25rem;
+        }
+
+        .service-card p {
+            color: var(--color-text-light);
+            line-height: 1.8;
+        }
+
+        /* Process Section */
+        #process {
+            background: var(--color-gray-50);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            position: relative;
+        }
+
+        .process-step {
+            background: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all var(--duration-base) ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-step:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .process-step h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.125rem;
+        }
+
+        .process-step p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* Why Choose Section */
+        #why-choose {
+            background: var(--color-white);
+        }
+
+        .why-choose-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+            align-items: center;
+        }
+
+        .why-choose-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .why-choose-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .why-choose-features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .why-feature {
+            display: flex;
+            gap: var(--spacing-lg);
+            align-items: flex-start;
+        }
+
+        .why-feature::before {
+            content: '✓';
+            font-size: 1.5rem;
+            color: var(--color-success);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .why-feature-content h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .why-feature-content p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        #cta {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(59, 130, 246, 0.95) 100%),
+                        url('https://source.unsplash.com/1200x800/?professional%2Chandshake%2Cin');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--color-white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        #cta .section-container {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        #cta .section-title {
+            color: var(--color-white);
+        }
+
+        #cta .section-description {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            align-items: center;
+            margin-top: var(--spacing-lg);
+        }
+
+        .cta-secondary-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            margin-top: var(--spacing-md);
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--color-gray-50);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+            max-width: 1000px;
+        }
+
+        .contact-info-card {
+            background: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-info-card h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            font-size: 1.125rem);
+        }
+
+        .contact-item {
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--color-gray-200);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-label {
+            color: var(--color-text-light);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: var(--spacing-xs);
+            display: block;
+        }
+
+        .contact-value {
+            color: var(--color-primary);
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .contact-value a {
+            color: var(--color-primary);
+        }
+
+        .contact-value a:hover {
+            color: var(--color-primary-light);
+        }
+
+        .office-hours {
+            background: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .office-hours h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            font-size: 1.125rem;
+        }
+
+        .hours-list {
+            list-style: none;
+        }
+
+        .hours-list li {
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-md);
+            padding-left: var(--spacing-lg);
+            position: relative;
+        }
+
+        .hours-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+        }
+
+        .emergency-note {
+            background: var(--color-accent-light);
+            border-left: 4px solid var(--color-accent);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            color: var(--color-text);
+            font-size: 0.95rem;
+            margin-top: var(--spacing-lg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-lg);
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+        }
+
+        /* Scroll Animation */
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity var(--duration-base) ease, transform var(--duration-base) ease;
+        }
+
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                padding: var(--spacing-md);
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: var(--color-white);
+                padding: var(--spacing-lg);
+                gap: var(--spacing-md);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                margin-top: 60px;
+                min-height: 70vh;
+            }
+
+            .about-content,
+            .why-choose-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-text h2 {
+                font-size: 1.875rem;
+            }
+
+            section {
+                padding: var(--spacing-2xl) var(--spacing-md);
+            }
+
+            .section-title {
+                font-size: 1.875rem;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .why-choose-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.125rem;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-description {
+                font-size: 0.95rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Popescu Dragos</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Acasă</a></li>
+                <li><a href="#about">Despre</a></li>
+                <li><a href="#services">Servicii</a></li>
+                <li><a href="#process">Proces</a></li>
+                <li><a href="#why-choose">De Ce Noi</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Apărare Penală de Încredere cu Peste 20 de Ani de Experiență</h1>
+                <p>Avocat Popescu Dragos - Oferind reprezentare juridică expertă în dreptul penal pentru protejarea drepturilor și intereselor dumneavoastră</p>
+                <a href="#contact" class="btn btn-secondary">Consultație Gratuită</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Experiență și Dedicare în Dreptul Penal</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Cu peste două decenii de practică juridică specializată în dreptul penal, Popescu Dragos oferă o apărare solidă și strategică pentru clienții săi. Experiența vastă și cunoașterea aprofundată a sistemului juridic român garantează o reprezentare de cea mai înaltă calitate în toate etapele procesului penal.</p>
+                        <div class="features-grid">
+                            <div class="feature-card scroll-fade">
+                                <h3>20+ Ani Experiență</h3>
+                                <p>Peste două decenii de practică exclusivă în dreptul penal</p>
+                            </div>
+                            <div class="feature-card scroll-fade">
+                                <h3>Cazuri Complexe</h3>
+                                <p>Experiență în gestionarea celor mai dificile dosare penale</p>
+                            </div>
+                            <div class="feature-card scroll-fade">
+                                <h3>Rezultate Dovedite</h3>
+                                <p>Istoric consistent de rezultate favorabile pentru clienți</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://source.unsplash.com/1200x800/?professional%2Clegal%2Cconsultation" alt="Consultație juridică profesională" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Servicii Juridice Specializate</h2>
+                    <p class="section-description">Oferim o gamă completă de servicii în domeniul dreptului penal, adaptate nevoilor specifice ale fiecărui client.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card scroll-fade">
+                        <h3>Apărare în Procesul Penal</h3>
+                        <p>Reprezentare juridică completă în toate fazele procesului penal, de la cercetarea preliminară până la instanța supremă</p>
+                    </div>
+                    <div class="service-card scroll-fade">
+                        <h3>Consultanță Juridică</h3>
+                        <p>Consiliere juridică preventivă și strategică pentru evitarea problemelor legale și minimizarea riscurilor</p>
+                    </div>
+                    <div class="service-card scroll-fade">
+                        <h3>Asistență în Cursul Urmăririi Penale</h3>
+                        <p>Protejarea drepturilor în timpul anchetei și a cercetării preliminare efectuate de organele de urmărire penală</p>
+                    </div>
+                    <div class="service-card scroll-fade">
+                        <h3>Apeluri și Recursuri</h3>
+                        <p>Contestarea hotărârilor judecătorești prin toate căile de atac disponibile pentru obținerea unei soluții favorabile</p>
+                    </div>
+                    <div class="service-card scroll-fade">
+                        <h3>Drept Penal Economic</h3>
+                        <p>Specializare în infracțiunile economice, fiscale și de corupție, oferind apărare expertă în cazuri complexe</p>
+                    </div>
+                    <div class="service-card scroll-fade">
+                        <h3>Drepturile Omului</h3>
+                        <p>Protejarea drepturilor fundamentale ale clientului și asigurarea respectării procedurii legale</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Procesul de Colaborare</h2>
+                    <p class="section-description">Abordarea noastră structurată asigură o apărare eficientă și transparentă.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step scroll-fade">
+                        <div class="step-number">01</div>
+                        <h3>Consultația Inițială</h3>
+                        <p>Evaluarea detaliată a cazului și a situației juridice pentru stabilirea strategiei optime de apărare</p>
+                    </div>
+                    <div class="process-step scroll-fade">
+                        <div class="step-number">02</div>
+                        <h3>Analiza Dosarului</h3>
+                        <p>Studiul aprofundat al documentelor, probelor și aspectelor juridice relevante pentru caz</p>
+                    </div>
+                    <div class="process-step scroll-fade">
+                        <div class="step-number">03</div>
+                        <h3>Strategia de Apărare</h3>
+                        <p>Dezvoltarea unei strategii juridice personalizate și adaptate specificului fiecărui caz</p>
+                    </div>
+                    <div class="process-step scroll-fade">
+                        <div class="step-number">04</div>
+                        <h3>Reprezentarea Activă</h3>
+                        <p>Asistență juridică completă în toate etapele procesului, cu comunicare constantă cu clientul</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section id="why-choose">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">De Ce Să Alegeți Popescu Dragos</h2>
+                    <p class="section-description">Combinația de experiență, dedicare și rezultate demonstrează angajamentul nostru față de fiecare client.</p>
+                </div>
+                <div class="why-choose-content">
+                    <div class="why-choose-image">
+                        <img src="https://source.unsplash.com/1200x800/?scales%2Cof%2Cjustice" alt="Balanța justiției" loading="lazy">
+                    </div>
+                    <div class="why-choose-features">
+                        <div class="why-feature scroll-fade">
+                            <div class="why-feature-content">
+                                <h3>Experiență Vastă</h3>
+                                <p>Peste 20 de ani de practică exclusivă în dreptul penal cu sutele de cazuri rezolvate cu succes</p>
+                            </div>
+                        </div>
+                        <div class="why-feature scroll-fade">
+                            <div class="why-feature-content">
+                                <h3>Abordare Personalizată</h3>
+                                <p>Fiecare caz este tratat individual, cu o strategie adaptată situației specifice a clientului</p>
+                            </div>
+                        </div>
+                        <div class="why-feature scroll-fade">
+                            <div class="why-feature-content">
+                                <h3>Disponibilitate Completă</h3>
+                                <p>Asistență juridică de urgență și comunicare constantă pe parcursul întregului proces legal</p>
+                            </div>
+                        </div>
+                        <div class="why-feature scroll-fade">
+                            <div class="why-feature-content">
+                                <h3>Confidențialitate Absolută</h3>
+                                <p>Respectarea strictă a secretului profesional și protejarea informațiilor sensibile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta">
+            <div class="section-container">
+                <h2 class="section-title">Aveți Nevoie de Asistență Juridică?</h2>
+                <p class="section-description">Nu lăsați problemele legale să se complice. Contactați-mă astăzi pentru o consultație profesională și obțineți răspunsurile de care aveți nevoie.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-secondary">Programează Consultația</a>
+                    <p class="cta-secondary-text">Consultația inițială este gratuită și confidențială</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Contactați-mă Pentru O Consultație</h2>
+                    <p class="section-description">Sunt aici să vă ajut cu toate aspectele legate de dreptul penal. Nu ezitați să mă contactați pentru o discuție confidențială despre situația dumneavoastră.</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info-card">
+                        <h3>Informații de Contact</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <div class="contact-value">
+                                <a href="mailto:obelisk.group@icloud.com">obelisk.group@icloud.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Telefon</span>
+                            <div class="contact-value">
+                                <a href="tel:1234567890">+40 123 456 7890</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="office-hours">
+                        <h3>Program de Lucru</h3>
+                        <ul class="hours-list">
+                            <li>Luni - Vineri: 09:00 - 18:00</li>
+                            <li>Sâmbătă: 09:00 - 13:00</li>
+                            <li>Duminică: Închis</li>
+                        </ul>
+                        <div class="emergency-note">
+                            <strong>Pentru situații de urgență:</strong> Sunt disponibil și în afara programului normal de lucru.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Popescu Dragos - Avocat de Drept Penal. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+
+        // Scroll animation for elements with scroll-fade class
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-fade').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation to nav on scroll
+        let lastScroll = 0;
+        const navbar = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 100) {
+                navbar.style.boxShadow = 'var(--shadow-md)';
+            } else {
+                navbar.style.boxShadow = 'var(--shadow-sm)';
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
